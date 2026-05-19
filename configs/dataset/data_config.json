@@ -1,0 +1,26 @@
+{
+    "description": "Конфигурация для подготовки датасета",
+
+    "data_dir": "./path/to/your/dataset",
+    "output_dir": "./data/my_dataset",
+
+    "class_names": ["class1", "class2"],
+
+    "class_mapping": {},
+
+    "task": "detect",
+
+    "loader_module": "my_data_loader",
+    "loader_class": "MyDataLoader",
+    "loader_kwargs": {
+        "custom_param": "value"
+    },
+
+    "train_ratio": 0.7,
+    "val_ratio": 0.15,
+    "test_ratio": 0.15,
+    "seed": 42,
+
+    "visualize": false,
+    "visualize_count": 20
+}
